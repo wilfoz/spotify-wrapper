@@ -7,10 +7,10 @@
     "clear": "rimraf lib",
     "build": "npm run clear && ./node_modules/.bin/babel --out-dir lib src",
     "build:watch": "npm run build -- --watch",
-    "lint": "./node_modules/.bin/eslint src/*.js",
+    "lint": "eslint src/*.js",
     "prepush": "npm run lint",
-    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
-    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
+    "test": "mocha tests/**/*.spec.js --require babel-register",
+    "test:tdd": "mocha tests/**/*.spec.js --require babel-register --watch",
     "test:coverage": "nyc npm test"
   },
   "nyc": {
@@ -24,14 +24,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wilfoz/spotify-wrapper.git"
+    "url": "git+https://github.com/wilfoz/spotify-wrapper.git"
   },
   "keywords": [
     "js",
     "tdd",
     "library"
   ],
-  "author": "wilfoz <wilerfozgmail.com",
+  "author": "wilfoz",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wilfoz/spotify-wrapper/issues"
@@ -49,5 +49,8 @@
     "mocha": "^3.2.0",
     "nyc": "^10.2.0",
     "rimraf": "^2.6.1"
+  },
+  "directories": {
+    "test": "tests"
   }
 }
