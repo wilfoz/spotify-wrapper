@@ -5,16 +5,16 @@
   "main": "src/index.js",
   "scripts": {
     "clear": "rimraf lib",
-    "prebuild": "./node_modules/.bin/babel --out-dir lib src",
+    "prebuild": "babel --out-dir lib src",
     "build": "npm run clear && npm run prebuild",
     "build:watch": "npm run build -- --watch",
-    "build:umd": "./node_modules/.bin/webpack --output-filename spotify-wrapper.umd.js",
-    "build:umd:min": "./node_modules/.bin/webpack --output-filename spotify-wrapper.umd.min.js -p",
+    "build:umd": "webpack --output-filename spotify-wrapper.umd.js",
+    "build:umd:min": "webpack --output-filename spotify-wrapper.umd.min.js -p",
     "build:all": "npm run build && npm run build:umd && npm run build:umd:min",
-    "lint": "./node_modules/.bin/eslint src/*.js",
+    "lint": "eslint src/*.js",
     "prepush": "npm run lint",
-    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
-    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
+    "test": "mocha tests/**/*.spec.js --require babel-register",
+    "test:tdd": "mocha tests/**/*.spec.js --require babel-register --watch",
     "test:coverage": "nyc npm test"
   },
   "nyc": {
@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wilfoz/spotify-wrapper.git"
+    "url": "git+https://github.com/wilfoz/spotify-wrapper1.git"
   },
   "keywords": [
     "js",
@@ -38,9 +38,9 @@
   "author": "wilfoz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wilfoz/spotify-wrapper/issues"
+    "url": "https://github.com/wilfoz/spotify-wrapper1/issues"
   },
-  "homepage": "https://github.com/wilfoz/spotify-wrapper#readme",
+  "homepage": "https://github.com/wilfoz/spotify-wrapper1#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-loader": "^7.0.0",
@@ -61,5 +61,10 @@
     "sinon-chai": "^2.9.0",
     "sinon-stub-promise": "^4.0.0",
     "webpack": "^2.4.1"
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "dependencies": {}
 }
