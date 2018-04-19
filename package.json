@@ -12,7 +12,6 @@
     "build:umd:min": "webpack --output-filename spotify-wrapper.umd.min.js -p",
     "build:all": "npm run build && npm run build:umd && npm run build:umd:min",
     "lint": "eslint src/*.js",
-    "prepush": "npm run lint",
     "test": "mocha tests/**/*.spec.js --require babel-register",
     "test:tdd": "mocha tests/**/*.spec.js --require babel-register --watch",
     "test:coverage": "nyc npm test"
