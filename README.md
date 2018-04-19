@@ -1,4 +1,5 @@
 # Spotify Wrapper
+[![Coverage Status](https://coveralls.io/repos/github/wilfoz/spotify-wrapper/badge.svg?branch=master)](https://coveralls.io/github/wilfoz/spotify-wrapper?branch=master)
 
 [![Build Status](https://travis-ci.org/wilfoz/spotify-wrapper.svg?branch=master)](https://travis-ci.org/wilfoz/spotify-wrapper)
 
