@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wilfoz/spotify-wrapper1.git"
+    "url": "git+https://github.com/wilfoz/spotify-wrapper.git"
   },
   "keywords": [
     "js",
@@ -38,9 +38,9 @@
   "author": "wilfoz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wilfoz/spotify-wrapper1/issues"
+    "url": "https://github.com/wilfoz/spotify-wrapper/issues"
   },
-  "homepage": "https://github.com/wilfoz/spotify-wrapper1#readme",
+  "homepage": "https://github.com/wilfoz/spotify-wrapper#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-loader": "^7.0.0",
